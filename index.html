@@ -1,0 +1,363 @@
+<html>
+
+<head>
+    <link rel="icon" href="tree.gif" type="image/gif" sizes="16x16">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=The+Girl+Next+Door&display=swap" rel="stylesheet"> 
+   <title> Virtual Stylist</title>
+</head>
+<style>
+    body {
+        background-color: #FACFFA;
+        background-color: #E2D2E2;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+    }
+
+    #filename {
+        font-weight: 200;
+        color: white;
+        background-color: #C195EE;
+        background-color: #BCD8E0;
+        border: 1px solid white;
+        padding: 5px;
+    }
+
+    p a {
+        padding-right: 10px;
+        background-color: #FACFFA;
+        background-color: #E2D2E2;
+    }
+
+    p {
+        line-height: 1.5;
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: #FACFFA;
+        background-color: #E2D2E2;
+        border: 1px solid white;
+        color: gray;
+    }
+
+    div.scroll {
+        background-color: #fed9ff;
+        background-color: #D3C3D3;
+        width: 70%;
+        height: 600px;
+        overflow: auto;
+        background-image: url("https://data.whicdn.com/images/307098937/original.gif");
+        background-repeat: repeat;
+        justify-content: center;
+        vertical-align: middle;
+        align-items: center;
+        text-align: center;
+    }
+
+    div.outfit {
+        background-color: #fed9ff;
+        background-color: #D3C3D3;
+        border: 1px white solid;
+        width: 30%;
+        height: 600px;
+        justify-content: center;
+        overflow: auto;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .rightside {
+        display: flex;
+        flex-wrap: wrap;
+        height: 600px;
+        vertical-align: middle;
+        background-color: #fed9ff;
+        background-color: #D3C3D3;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rightside>div {
+        background-color: white;
+        width: 9em;
+        height: 9em;
+        margin: 3px;
+        text-align: center;
+        line-height: 75px;
+
+    }
+
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        padding: 2px;
+    }
+
+    .flex-container>div {
+        background-color: white;
+        width: 8em;
+        height: 8em;
+        margin: 10px;
+        justify-content: center;
+        line-height: 75px;
+        font-size: 30px;
+        border: 2px solid palevioletred;
+        cursor: pointer;
+    }
+
+    #main {
+        display: flex;
+        flex-wrap: flexwrap;
+        vertical-align: middle;
+        background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F68.media.tumblr.com%2Ff4376adadb428cb7578bed0d7c51ec9a%2Ftumblr_okxuz0uNPQ1w0ii2ho1_500.gif&f=1&nofb=1");
+    }
+
+    .type {
+        padding: 10px;
+        text-align: center;
+    }
+
+    .button {
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    container {
+        max-width: 100%;
+    }
+    .menuItem, #filename{
+        font-size:20px;
+    }
+    body{
+        margin:0;
+        height:100%;
+        overflow:hidden;
+    }
+    @media only screen and (max-width: 600px) {
+
+  .menuItem, #filename{
+        font-size:15px;
+    }
+}
+</style>
+<style>
+    nav{
+        font-family: "Fredoka", sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(0, 0, 0);
+        background-color: pink;
+       
+    }
+    h1{
+        padding:10px;
+        margin:0px;
+    }
+</style>
+<body>
+
+    <p id="filename">aesthetic.exe</p>
+    <p id="menu">
+        <a id="file" class="menuItem" style="cursor:pointer;">File</a>
+        <a id="edit" class="menuItem">Edit</a>
+        <a id="tops" class="menuItem" style="cursor:pointer;">Tops</a>
+        <a id="bottoms" class="menuItem" style="cursor:pointer;">Bottoms</a>
+        <a id="shoes" class="menuItem" style="cursor:pointer;">Shoes</a>
+        <a id="accessories" class="menuItem" style="cursor:pointer;">Accessories</a>
+
+    </p>
+    <div id="main">
+
+        <div class="scroll">
+            <div id="hello">
+                <h3 style="margin:20%;padding:20px;background-color:white;"> This is the aesthetic.exe beta.
+                    <br>Explore different clothing items and
+                    click to create new outfits.
+                    <br>Thank you for trying it out!
+                </h3>
+            </div>
+            <div id="closet" style="display:none;" class="flex-container">
+                <div id="1" class="item"><img src="https://cozyolive.com/wp-content/uploads/2021/07/cardigan1.png"
+                        width="100%" height="100%"></div>
+                <div id="2" class="item"></div>
+                <div id="3" class="item"></div>
+                <div id="4" class="item"></div>
+                <div id="5" class="item"></div>
+                <div id="6" class="item"></div>
+                <div id="7" class="item"></div>
+                <div id="8" class="item"></div>
+                <div id="9" class="item"></div>
+                <div id="10" class="item"></div>
+                <div id="11" class="item"></div>
+                <div id="12" class="item"></div>
+            </div>
+        </div>
+        <div class="outfit">
+            <div id="outfit">
+                <h3>Outfit #1</h3>
+                <div id="right" class="rightside">
+                    <div class="look" id="look1">Top</div>
+                    <div class="look" id="look2">Bottom</div>
+                    <div class="look" id="look3">Shoes</div>
+                    <div class="look" id="look4">Accessory</div>
+                    <div class="look" id="look5">Accessory</div>
+                    <div class="look" id="look6">Accessory</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- <div class="type">
+        <button class="button" onclick="saveOutfit()">Save this Look</button>
+        <button class="button" onclick="loadOutfit()"> Load your look</button>
+    </div>
+    --> 
+  <!----  <p id="test1">erty</p>
+    <p id="test2">sdfgh</p>
+    <p id="test3">dfgh</p>
+  -->
+    <p id="filename">@kenncodes</p>
+</body>
+<script>
+
+    var currentMenuItem = "";
+    var tops = ["cardigan1.png", "top12.png", "top16.png", "top1.png", "top2.png",
+        "top3.png", "top4.jpg", "top5.png", "top6.jpg",
+        "top7.png", "top8.png", "top10.jpg", "top11.png", "top13.jpeg",
+        "top14.png", "top16.jpg", "top15.png"];
+    var bottoms = ["bottoms10.jpg", "bottoms1.png", "bottoms2.png", "bottoms4.png", "bottoms9.png",
+        "skirt.jpg", "skirt1.jpeg", "bottom12.jpg", "bottoms5.png", "bottoms7.webp", "bottoms8.png", "bottom14.png"];
+    var shoes = ["shoes1.jpg", "shoes2.png", "shoes8.jpg", "shoes9.png", "shoes3.jpg", "shoes4.png", "shoes10.jpg",
+        "shoes5.jpeg", "shoes6.png", "shoes7.png", "shoe12.png", "sh13.png"];
+    var accessories = ["a1.webp", "a2.jpg", "a3.png", "a4.jpg", "a5.jpg", "a13.png", "a7.jpg",
+        "hat.png", "a9.jpg", "a12.png", "a10.jpg", "a11.jpg"];
+
+    //Onclick listener for the menu
+    var temp = document.getElementById("menu").getElementsByTagName("A");
+    for (var i = 0; i < temp.length; i++) {
+        temp[i].setAttribute("onClick", "updateCloset(id)");
+    }
+
+    //onclick listener for the items
+    var temp2 = document.getElementById("closet").querySelectorAll(".item");
+    for (var j = 0; j < temp2.length; j++) {
+        temp2[j].setAttribute("onClick", "updateOutfit(id)");
+    }
+
+    /*Changes Category, Resets Background */
+    function updateCloset(id) {
+
+        var x = document.getElementById("closet").querySelectorAll(".item");
+        var menus = document.getElementById("menu").querySelectorAll(".menuItem");
+        for (var z = 0; z < menus.length; z++) {
+            menus[z].style.backgroundColor = "";
+        }
+        document.getElementById(id).style.backgroundColor = "white";
+        if (id == "file") {
+          //  alert("hello");
+            var x = document.getElementById("hello");
+            x.setAttribute("style", "");
+            var x = document.getElementById("closet");
+            x.setAttribute("style", "display:none");
+
+        }
+        for (var i = 0; i < x.length; i++) {
+            var y = document.getElementById("hello");
+            y.setAttribute("style", "display:none");
+
+            var z = document.getElementById("closet");
+            z.setAttribute("style", "");
+            if (id == "tops") {
+                currentMenuItem = "tops";
+                x[i].innerHTML = '<div style="vertical-align:middle" ><img src="' + id + '\\' + tops[i] + '" width="100%" height="100%"></div>';
+
+            } else if (id == "bottoms") {
+                currentMenuItem = "bottoms";
+                x[i].innerHTML = '<div style="vertical-align:middle" ><img src="' + id + '\\' + bottoms[i] + '" width="100%" height="100%"></div>';
+            } else if (id == "shoes") {
+                currentMenuItem = "shoes";
+                x[i].innerHTML = '<div style="vertical-align:middle" ><img src="' + id + '\\' + shoes[i] + '" width="100%" height="100%"></div>';
+            } else if (id == "accessories") {
+                currentMenuItem = "accessories";
+                x[i].innerHTML = '<div style="vertical-align:middle" ><img src="' + id + '\\' + accessories[i] + '" width="100%" height="100%"></div>';
+            }
+
+        }
+    }
+
+
+    var currentTop = 0;
+    var currentBottom = 0;
+    var currentShoes = 0;
+    var currentAcc1 = 0;
+    var currentAcc2 = 0;
+    var currentAcc3 = 0;
+    var numOutfits = 0;
+    var currentAcc = 0;
+
+    function updateOutfit(id) {
+
+        if (currentMenuItem == "tops") {
+            currentTop = id;
+            document.getElementById("look1").innerHTML = "<img src=\"" + "tops" + "\\" + tops[id - 1] + "\" width=\"100%\" height=\"100%\">";
+        } else if (currentMenuItem == "bottoms") {
+            currentBottom = id;
+            document.getElementById("look2").innerHTML = "<img src=\"" + "bottoms" + "\\" + bottoms[id - 1] + "\" width=\"100%\" height=\"100%\">";
+        } else if (currentMenuItem == "shoes") {
+            currentShoes = id;
+            document.getElementById("look3").innerHTML = "<img src=\"" + "shoes" + "\\" + shoes[id - 1] + "\" width=\"100%\" height=\"100%\">";
+        } else if (currentMenuItem == "accessories") {
+            currentAccessories = id;
+            if (currentAcc % 3 == 0) {
+                document.getElementById("look4").innerHTML = "<img src=\"" + "accessories" + "\\" + accessories[id - 1] + "\" width=\"100%\" height=\"100%\">";
+            } else if (currentAcc % 3 == 1) {
+                document.getElementById("look5").innerHTML = "<img src=\"" + "accessories" + "\\" + accessories[id - 1] + "\" width=\"100%\" height=\"100%\">";
+            } else if (currentAcc % 3 == 2) {
+                document.getElementById("look6").innerHTML = "<img src=\"" + "accessories" + "\\" + accessories[id - 1] + "\" width=\"100%\" height=\"100%\">";
+            }
+            currentAcc++;
+        }
+
+    }
+
+    var myCookies = {};
+    function saveOutfit() {
+        var d = new Date();
+        d.setTime(d.getTime() + (3 * 24 * 60 * 60 * 1000));
+        var expires = "expires=" + d.toUTCString();
+        document.cookie = "top=" + currentTop;
+        document.cookie = "bottom=" + currentBottom;
+        document.cookie = "shoes=" + currentShoes;
+        document.cookie = "accessories=" + currentAccessories;
+
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+
+    }
+    function loadOutfit() {
+        document.getElementById("test1").innerHTML = "top" + getCookie("top");
+        document.getElementById("test2").innerHTML = "bottom" + getCookie("bottom");
+        document.getElementById("test3").innerHTML = "shoes" + getCookie("shoes");
+
+    }
+</script>
+
+</html>
